@@ -5,7 +5,11 @@ module.exports = {
         amd: true,
         node: true,
     },
-    extends: ['plugin:prettier/recommended', 'eslint:recommended', 'plugin:react/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'eslint:recommended', 
+        'plugin:prettier/recommended'
+    ],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
