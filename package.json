@@ -34,16 +34,16 @@
   "prettier": { 
     "printWidth": 100,
     "trailingComma": "all",
-    "tabWidth": 4, 
+    "tabWidth": 2, 
     "semi": true, 
     "singleQuote": true
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint",
-      "pretty-quick — staged",
+      "prettier --write",
       "git add"
-    ]
+          ]
   },
   "browserslist": {
     "production": [
