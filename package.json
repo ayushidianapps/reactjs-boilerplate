@@ -27,13 +27,6 @@
       "plugin:prettier/recommended"
     ]
   },
-  "prettier": {
-    "printWidth": 100,
-    "trailingComma": "all",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  },
   "lint-staged": {
     "*.+(js|jsx)": "eslint --fix",
     "*.+(js|jsx|json|css|md)": "prettier --write"
