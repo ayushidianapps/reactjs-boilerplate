@@ -57,6 +57,12 @@ module.exports = {
         },
       },
     ],
+    camelcase: [
+      2,
+      {
+        ignoreDestructuring: true,
+      },
+    ],
   },
   settings: {
     react: {
