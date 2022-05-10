@@ -22,7 +22,12 @@ module.exports = {
   plugins: ['prettier', 'react'],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
     'no-return-assign': ['off'],
     'react/prop-types': ['warn'],
     'import/order': [
@@ -37,10 +42,18 @@ module.exports = {
           },
         ],
         pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
           caseInsensitive: true,
+        },
+      },
+    ],
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: 'always',
+        ObjectPattern: {
+          multiline: true,
         },
       },
     ],
