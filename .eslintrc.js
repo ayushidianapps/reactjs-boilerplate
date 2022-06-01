@@ -63,6 +63,13 @@ module.exports = {
         ignoreDestructuring: true,
       },
     ],
+    'prettier/prettier': [
+      'error',
+
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   settings: {
     react: {
