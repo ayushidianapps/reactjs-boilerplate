@@ -21,6 +21,7 @@ module.exports = {
   },
   plugins: ['prettier', 'react'],
   rules: {
+    'react/no-unknown-property': 'off',
     'react/react-in-jsx-scope': 'off',
     'no-unused-vars': [
       'error',
