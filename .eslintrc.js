@@ -21,7 +21,16 @@ module.exports = {
   },
   plugins: ['prettier', 'react'],
   rules: {
+    'react/no-unknown-property': 'off',
     'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+      },
+    ],
     'react/jsx-filename-extension': [
       1,
       {
@@ -63,6 +72,13 @@ module.exports = {
         ignoreDestructuring: true,
       },
     ],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'no-useless-escape': 'off',
   },
   settings: {
     react: {
